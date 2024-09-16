@@ -6,10 +6,12 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
+// xor query sub array - medium
 func TestXorQueriesSubArray(t *testing.T) {
 
 	arr := []int{1, 3, 4, 8}
 	queries := [][]int{{0, 1}, {1, 2}, {0, 3}, {3, 3}}
+
 	var result []int
 	var xori int
 	for _, query := range queries {
