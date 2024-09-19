@@ -12,7 +12,7 @@ import (
 
 func TestMtd(t *testing.T) {
 
-	timePoints := []string{"23:57", "00:00"}
+	timePoints := []string{"23:59", "00:00", "23:54"}
 
 	if len(timePoints) < 2 {
 		os.Exit(8)
