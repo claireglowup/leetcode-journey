@@ -6,8 +6,8 @@ import (
 
 func main() {
 
-	s := "100"
-	d := "102"
+	s := "asdfawfewfok"
+	ssa := []string{"osdf"}
 
-	fmt.Println(s < d)
+	fmt.Println(string(s[0:3]), len(ssa[0]))
 }
