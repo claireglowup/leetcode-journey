@@ -6,8 +6,7 @@ import (
 
 func main() {
 
-	s := "asdfawfewfok"
-	ssa := []string{"osdf"}
+	s := 17 / 10
 
-	fmt.Println(string(s[0:3]), len(ssa[0]))
+	fmt.Println(s)
 }
