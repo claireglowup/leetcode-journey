@@ -1,12 +1,8 @@
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
 
-	s := 17 / 10
+	calendar := Constructor()
+	calendar.Book(10, 20)
 
-	fmt.Println(s)
 }
