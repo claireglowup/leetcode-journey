@@ -11,6 +11,8 @@ func TestCalendar(t *testing.T) {
 	calendar := Constructor()
 	assert.Equal(t, true, calendar.Book(10, 20))
 	assert.Equal(t, false, calendar.Book(15, 25))
+	assert.Equal(t, true, calendar.Book(20, 30))
+
 }
 
 type MyCalendar struct {

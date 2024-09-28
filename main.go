@@ -1,8 +1,20 @@
 package main
 
+import "fmt"
+
 func main() {
 
-	calendar := Constructor()
-	calendar.Book(10, 20)
+	nums := []int{1, 11, 15, 7, 2}
+	target := 9
 
+	dict := make(map[int]int)
+
+	for i, v := range nums {
+
+		index, ok := dict[target-v]
+		if ok {
+			fmt.Println(index, i)
+		}
+		dict[v] = i
+	}
 }
