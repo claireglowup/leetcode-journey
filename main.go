@@ -1,25 +1,22 @@
 package main
 
-import "fmt"
+import "log"
 
 func main() {
-	arr := []int{1, 2, 3, 4, 5, 10, 6, 7, 8, 9}
-	k := 5
 
-	var result [][]int
-	remainderMap := make(map[int]int) // Map untuk menyimpan sisa pembagian
+	log.Println(isPalindrome(121))
+}
 
-	for _, each := range arr {
-		rem := each % k
-		complement := (k - rem) % k // Cari pasangan yang melengkapi jadi kelipatan k
+func isPalindrome(x int) bool {
 
-		if remainderMap[complement] > 0 {
-			result = append(result, []int{each, complement * k})
-			remainderMap[complement]-- // Kurangi jumlah pasangan yang tersedia
-		} else {
-			remainderMap[rem]++ // Tambahkan elemen ke map
-		}
+	ori := x
+	var reverse int
+
+	for x > 0 {
+		reverse = reverse*10 + x%10
+		x /= 10
+
 	}
+	return reverse == ori
 
-	fmt.Println(result)
 }
