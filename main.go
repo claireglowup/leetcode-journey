@@ -4,19 +4,10 @@ import "log"
 
 func main() {
 
-	log.Println(isPalindrome(121))
-}
+	input := []string{"float", "flowchart", "flowwan"}
 
-func isPalindrome(x int) bool {
-
-	ori := x
-	var reverse int
-
-	for x > 0 {
-		reverse = reverse*10 + x%10
-		x /= 10
-
+	for _, each := range input {
+		log.Print(each)
 	}
-	return reverse == ori
 
 }
