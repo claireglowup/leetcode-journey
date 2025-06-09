@@ -2,6 +2,9 @@ package main
 
 import "sort"
 
+// Input: strs = ["flower","flow","flight"]
+// Output: "fl"
+
 func longestPrefix(s []string) string {
 	if len(s) == 0 {
 		return ""
